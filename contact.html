@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.html">
+    <link rel="stylesheet" href="index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script>
+        function gotowhatsapp() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            
+
+            var url = "https://wa.me/919910768114?text="
+            + "Name: " + name + "%0a"
+            + "Email: " + email + "%0a"
+            + "Message: " + message;
+
+            window.open(url, '_blank').focus();
+        }
+    </script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>RS Enterprices</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+       <div class="navbar">
+           <div class="logo">
+             <a href="index.html">  <img src="images/logo-rs.png" alt="r.s.enterprices-logo" width="125px"></a>
+           </div>
+           <nav>
+               <ul id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li> 
+               </ul>
+           </nav>
+        <!--   <img src="images/cart.png" width="30px" height="30px">-->
+           <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+       </div> 
+    </div>
+    </div>
+    <section class="contact">
+        <div class="content">
+            <h2 class="title">Let's Connect</h2>
+            <p>We are just a WhatsApp message away! Drop and say a hi.</p>
+        </div>
+        <div class="container-contact">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>New Delhi</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <a href="whatsapp://send?text=Hello R.S Enterprices&phone=+919910768114"  target="_blank">  <p>+91-9910768114</p> </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>Rishikawadhwa@hotmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form autocomplete="off">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" id="name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" id="email" required="required">
+                        <span>Eamil</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="" id="message" required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="submit" onclick="gotowhatsapp()" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <a href="whatsapp://send?text=Hello R.S Enterprices&phone=+919910768114" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+              <!--  <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download for Android and ios phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>-->
+                <div class="footer-col-1">
+                   <img src="images/logo-footer.png" alt="">
+                    <p>Our purpouse is to sustainably make the pleasure for foodies with adding on different cheesy flavour to their special dishes.</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Useful Links</h3>
+                     <ul>
+                         <li>Coupons</li>
+                         <li>Blog Post</li>
+                         <li>Return Policy</li> 
+                         <li>Join Affiliate</li>
+                    </ul>
+                 </div>
+                 <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                     <ul>
+                         <li>Facebook</li>
+                         <li><a href="https://www.instagram.com/pataka.libra/" target="_blank">Instagram</a></li>
+                         <li>Twitter</li> 
+                         <li>Youtube</li>
+                    </ul>
+                 </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright-2021 | R.S Enterprices</p>
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+    
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "140px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
